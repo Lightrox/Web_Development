@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action = "/submit.php" method = "post">
+        <label for = "username">Username: </label>
+        <input type = "text" placeholder = "username" name="Username" id=""username><br><br>
+        <label for = "user_password">Password: </label>
+        <input type = "password" id="user_password" placeholder = "Password" name="Password"><br><br>
+        <label for = "dob">Date of Birth</label>
+        <input type = "date" id = "dob" name="dateofbirth"><br><br>
+        <label for="male">Male: </label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female: </label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">Other: </label>
+        <input type="radio" id="other" name="gender" value="other"><br><br>
+        <label for="age">Age</label>
+        <select id="age" name="age">
+            <option value = "none">None</option>
+            <option value="below12">Under 12</option>
+            <option value="under18">Under 18</option>
+            <option value="18-25">18-25</option>
+            <option value="above25">Above 25</option>
+
+        </select>
+        <br><br>
+        <table>
+            <caption >Languages Known</caption>
+            <tr>
+                <td>
+                    <label for="c">C</label>
+                </td>
+                <td >
+                    <input type="checkbox" id="c" name="language" value="c">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="java">Java</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="java" name="language" value="java">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="python">Python</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="python" name="language" value="python">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" >
+        <input type="button" id="button"  name="Reset" value="Reset">
+
+    </form>
+</body>
+</html>
